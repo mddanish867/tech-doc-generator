@@ -22,20 +22,20 @@ export function FeaturesSection() {
       badge: "AI",
       color: "bg-purple-500",
     },
-    {
-      icon: FileText,
-      title: "Multiple Formats",
-      description: "Export documentation in PDF, Markdown, HTML, or Word formats with professional templates.",
-      badge: "Flexible",
-      color: "bg-green-500",
-    },
-    {
-      icon: Palette,
-      title: "Beautiful Templates",
-      description: "Choose from modern, classic, minimal, or technical templates to match your brand.",
-      badge: "Design",
-      color: "bg-pink-500",
-    },
+    // {
+    //   icon: FileText,
+    //   title: "Multiple Formats",
+    //   description: "Export documentation in PDF, Markdown, HTML, or Word formats with professional templates.",
+    //   badge: "Flexible",
+    //   color: "bg-green-500",
+    // },
+    // {
+    //   icon: Palette,
+    //   title: "Beautiful Templates",
+    //   description: "Choose from modern, classic, minimal, or technical templates to match your brand.",
+    //   badge: "Design",
+    //   color: "bg-pink-500",
+    // },
     {
       icon: Clock,
       title: "Real-time Updates",
@@ -64,13 +64,13 @@ export function FeaturesSection() {
       badge: "Team",
       color: "bg-indigo-500",
     },
-    {
-      icon: Settings,
-      title: "Customizable",
-      description: "Fine-tune documentation sections, styling, and content to match your specific needs.",
-      badge: "Custom",
-      color: "bg-yellow-500",
-    },
+    // {
+    //   icon: Settings,
+    //   title: "Customizable",
+    //   description: "Fine-tune documentation sections, styling, and content to match your specific needs.",
+    //   badge: "Custom",
+    //   color: "bg-yellow-500",
+    // },
   ]
 
   return (
@@ -82,7 +82,7 @@ export function FeaturesSection() {
             <span className="text-sm font-medium text-blue-700">Powerful Features</span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
-            Everything You Need for{" "}
+            Everything You Need for{" "}<br/>
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Perfect Documentation
             </span>
@@ -97,7 +97,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-1 bg-gradient-to-br from-white to-slate-50"
+              className="group hover:shadow-xl transition-all duration-300 border-none hover:-translate-y-1"
             >
               <CardContent className="p-6">
                 <div className="flex items-start justify-between mb-4">

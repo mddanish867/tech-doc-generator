@@ -12,7 +12,7 @@ export function HowItWorksSection() {
       title: "Connect Your Repository",
       description:
         "Link your GitHub, AWS, GCP, or Azure repository with just a few clicks. Our secure connection ensures your code stays private.",
-      features: ["One-click OAuth integration", "Support for private repositories", "Multiple platform support"],
+      
       color: "from-blue-500 to-blue-600",
       bgColor: "bg-blue-50",
     },
@@ -92,21 +92,14 @@ export function HowItWorksSection() {
                     </div>
                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">{step.title}</h3>
                     <p className="text-lg text-slate-600 mb-6 leading-relaxed">{step.description}</p>
-                    <ul className="space-y-2 mb-6">
-                      {step.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center space-x-2 text-slate-600">
-                          <div className={`w-2 h-2 bg-gradient-to-r ${step.color} rounded-full`} />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    
                   </div>
                 </div>
 
                 {/* Visual */}
                 <div className="flex-1 lg:max-w-lg">
                   <Card
-                    className= "bg-white border-none transition-all duration-300 group"
+                    className= "bg-white  shadow-none transition-all duration-300 group"
                   >
                     <CardContent className="p-8">
                       <div className="text-center">
@@ -133,7 +126,7 @@ export function HowItWorksSection() {
         <div className="text-center mt-12">
           <Button
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-8 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
             onClick={() => (window.location.href = "/login")}
           >
             Start Your Documentation Journey

@@ -38,7 +38,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-white text-gary-900">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand */}
@@ -59,7 +59,7 @@ export function Footer() {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-slate-700 transition-colors group"
+                  className="w-10 h-10 bg-none rounded-lg flex items-center justify-center hover:bg-blue-500 transition-colors group"
                 >
                   <social.icon className="w-5 h-5 text-slate-400 group-hover:text-white transition-colors" />
                 </a>
@@ -70,11 +70,11 @@ export function Footer() {
           {/* Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-semibold text-white mb-4">{category}</h3>
+              <h3 className="font-semibold text-black mb-4">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    <a href={link.href} className="text-slate-400 hover:text-white transition-colors">
+                    <a href={link.href} className="text-gray-400 font-normal hover:text-blue-500 transition-colors">
                       {link.name}
                     </a>
                   </li>
@@ -85,8 +85,8 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-slate-400 text-sm">© 2024 AutoDocGen. All rights reserved.</p>
+        <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between">
+          <p className="text-slate-400 text-sm">© 2025 AutoDocGen. All rights reserved.</p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <span className="text-slate-400 text-sm">Made with ❤️ for developers</span>
           </div>

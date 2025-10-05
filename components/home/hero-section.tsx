@@ -45,7 +45,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-in fade-in-50 slide-in-from-bottom-6 duration-1000 delay-600">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-8 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
               onClick={() => (window.location.href = "/login")}
             >
               Start Generating Docs
@@ -54,32 +54,14 @@ export function HeroSection() {
             <Button
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg font-semibold border-2 hover:bg-slate-50 group bg-transparent"
+              className="px-8 py-8 text-lg font-semibold border-2 hover:bg-slate-50 group bg-transparent"
             >
               <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Watch Demo
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto animate-in fade-in-50 slide-in-from-bottom-7 duration-1000 delay-800">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">10K+</div>
-              <div className="text-sm text-slate-600">Docs Generated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">500+</div>
-              <div className="text-sm text-slate-600">Happy Developers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">95%</div>
-              <div className="text-sm text-slate-600">Time Saved</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">4.9★</div>
-              <div className="text-sm text-slate-600">User Rating</div>
-            </div>
-          </div>
+        
         </div>
 
         {/* Hero Image/Animation */}
@@ -119,12 +101,7 @@ export function HeroSection() {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Floating elements */}
-            {/* <div className="absolute -top-4 -left-4 w-8 h-8 bg-blue-500 rounded-full animate-bounce delay-1000"></div>
-            <div className="absolute -top-2 -right-6 w-6 h-6 bg-purple-500 rounded-full animate-bounce delay-1500"></div>
-            <div className="absolute -bottom-3 left-8 w-5 h-5 bg-pink-500 rounded-full animate-bounce delay-2000"></div> */}
+            </div>           
           </div>
         </div>
       </div>
